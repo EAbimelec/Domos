@@ -13,21 +13,12 @@
         , elevadores personales, Guadalajara, México">
     <link rel="shorcut icon" href="images/favicon.svg">
     <title>Industriasa Domos automaticos y automatizaciones especiales</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-        $(window).on('scroll', function(){
-            if($(window).scrollTop()){
-                $('header').addClass('white');
-            }else{
-                $('header').removeClass('white');
-            }
-        })
-    </script>
+    <script src="animations.js"></script>
 </head>
 
 <body>
 
-    <header>
+    <header id="main-header">
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu"><img src="images/menu.svg" alt="Icono de menu"></label>
 
