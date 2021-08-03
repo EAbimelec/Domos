@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="start" href="index.html" title="Domos automaticos y automatizaciones en general">
+    <meta name="description" content="Domos automaticos y automatizaciones en general">
+    <meta name="keywords" lang="es"
+        content="Domotica, automatizaciones, portones automaticos, domos automáticos, elevadores
+        , elevadores personales, Guadalajara, México">
+    <link rel="shorcut icon" href="images/favicon.svg">
+    <title>Industriasa Domos automaticos y automatizaciones especiales</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('header').addClass('white');
+            }else{
+                $('header').removeClass('white');
+            }
+        })
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="images/menu.svg" alt="Icono de menu"></label>
+
+        <nav id="menu">
+            <img id="logo" src="images/logo.svg" alt="Logo de Industriasa">
+            <ul>
+                <li><a href="#first">Inicio</a></li>
+                <li><a href="galery.html">Galería</a></li>
+                <li><a href="#foot-text">Contacto</a></li>
+                <!-- <li><a href="#">Presupuesto</a></li> -->
+            </ul>
+        </nav>
+        
+        
+        
+    </header>
+
+    <div id="container">
+
+        <div id="first">
+            <h1 class="first-text">Industriasa</h1>
+            <h2 class="first-text">
+                <p class="screen">Automatizamos cualquier cosa que puedas</p>
+                <p class="screen" style="margin-bottom: 2rem;">imaginar</p>
+                
+                <p class="mobile">Automatizamos</p>
+                <p class="mobile">cualquier cosa que puedas</p>
+                <p class="mobile">imaginar</p>
+            </h2>
+            <a class="btn" href="#foot-text">Contacto</a>
+        </div>
+  
+        <div id="location">
+            <h2 class="subtitle" class="location-component">Encuentranos</h2>
+            
+            <iframe class="location-component" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9461325710495!2d-103.44849151763623!
+            3d20.671770420855882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aeb31d907167%3A0xd899e1ac1069ba
+            b5!2sCalz.%20Circunvalacion%20Ote.%20372%2C%20Granja%2C%2045010%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v
+            1621376890352!5m2!1ses-419!2smx" loading="lazy">
+            </iframe>
+        </div>
+      
+        <div id="work">
+
+            <h2 class="subtitle">Nuestro trabajo</h2>
+
+            <div id="image-1" class="image-block">
+                <h3>Domos automáticos</h3>
+                <img src="images/domo-automatico.png" alt="Domo en automatico abatible, automatizado con pistones">
+            </div>
+
+            <div id="image-2" class="image-block">
+                <h3>Portones automáticos</h3>
+                <img src="images/porton-automatico.png" alt="Porton auntomatizado con pistones"> 
+            </div>
+
+            <div id="image-3" class="image-block">
+                <h3>Elevadores</h3>
+                <img src="images/elevador.png" alt="Elevador personal, cubierto con cristal templado">   
+            </div>
+
+            <div id="image-4" class="image-block">
+                <h3>Automatizaciones especiales</h3>
+                <img src="images/puerta-cristal.png" alt="Puertas automaticas corredizas de cristal templado">
+            </div> 
+        </div>   
+        
+        <div id="buttons">
+            <h2>
+                <p class="screen">Conoce todos nuestros</p>
+                <p class="screen" class="text-center" >proyectos</p>
+
+                <p id="mobile-btn" class="mobile">Conoce todos nuestros proyectos</p>
+            </h2>
+            <a class="btn" href="galery.html">Galeria</a>
+
+            <!-- <h2>
+                <p>Haz un presupuesto</p>
+                <p class="text-center">aproximado</p>
+            </h2>
+            <a class="btn" href="presupuesto.html">Presupuesto</a> -->
+        </div>
+
+        <footer>
+        
+            <div id="foot-text">
+                <p>Circunvalacion Oriente 372, Col. Cd Granja, Zapopan, Jalisco, México</p>
+                <p id="email" >E-mail: Industriasa@hotmail.com</p>
+                <p>Teléfono: 3318686165 <br>Llamanos o manda un mensaje de WhatsApp</p>
+            </div>
+            
+            
+            <img  src="images/logo-banco.svg" alt="Logo de Industriasa">
+        
+        </footer>
+
+    </div>
+
+    
+</body>
+
+</html>
