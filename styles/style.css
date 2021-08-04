@@ -63,14 +63,15 @@ header label {
 
 #menu li{
     display: block;
-    margin-left: 60px;
+    margin: 1px 1px 1px 60px;
 }
 
 #menu a {
     padding: 4px;
 }
 
-#menu a:hover {
+#menu li:hover {
+    margin: 0px 0px 0px 59px;
     border: 1px solid;
     border-radius: 2px;
 }
@@ -139,9 +140,34 @@ header label {
     justify-content: center;
     padding: .8rem 2.1rem;
 
-    border: 1px solid;
+    border: 1px solid ;
     border-radius: 6px;
 }
+
+.btn-m:link,
+.btn-m:visited {
+    transition: all .2s;
+}
+
+.btn-m:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-animation {
+    
+    font-family: AlegreyaSans-Regular;
+    font-size: 2.2rem;
+    transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
+    display: block;
+    justify-content: center;
+    padding: .8rem 2.1rem;
+    border: 1px solid ;
+    border-radius: 6px;
+    }
+
+.btn-animation:hover {
+    background-color: rgba(219, 219, 219, 0.986);
+    }
 
 .subtitle {
     font-family: AlegreyaSans-Medium;
