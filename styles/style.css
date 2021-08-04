@@ -75,6 +75,11 @@ header label {
     border-radius: 2px;
 }
 
+#menu .whitout-rec:hover{
+    border: 3px;
+    border-radius: 3px;
+}
+
 #menu a:active {
     color: #3B3B3B;
     border-color: black;
@@ -361,3 +366,4 @@ footer img {
     background-color: rgba(255, 255, 255, .8);
 
   }
+
