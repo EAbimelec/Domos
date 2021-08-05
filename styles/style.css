@@ -393,3 +393,6 @@ footer img {
 
   }
 
+html{
+    scroll-behavior: smooth;
+}
