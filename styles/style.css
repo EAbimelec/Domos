@@ -228,7 +228,7 @@ header label {
 
 .image-block {
 
-  width: 1000px;
+  width: 58vw;
 
 }
 
@@ -240,17 +240,9 @@ header label {
   position: relative;
 }
 
-#left-arrow:hover {
-
+.arrows:hover {
   height: 100px;
   width: 80px;
-}
-
-#rigth-arrow:hover {
-
-  height: 100px;
-  width: 80px;
-
 }
 
 #buttons {
@@ -368,7 +360,7 @@ footer img {
     }
 
     #work {
-        margin: 0 24px;
+        margin: 0 ;
         display: flex;
         flex-direction: column;
     }
@@ -381,8 +373,44 @@ footer img {
         font-size: 1.8em;
         line-height: 1.7rem;
         padding: .5em 0;
+	border-radius: 0;
     }
     
+
+    .image-block {
+
+      width: 100%;
+
+    }
+
+
+    .arrows {
+      height: 40px;
+      width: 40px;
+      transition: .3s;
+      position: absolute;
+      margin: 0;
+      top: 1555px;
+    }
+
+    .arrows:hover {
+      height: 56px;
+      width: 40px;
+      top: 1547px;
+    }
+
+    #left-arrow {
+
+      right: 85vw;
+
+    }
+
+    #rigth-arrow {
+
+      left: 85vw;
+
+    }
+
     #buttons {
         margin: 4rem 24px;
     }
@@ -393,7 +421,7 @@ footer img {
 
     footer {
         height: 25rem;
-        display: flex;
+        /* display: flex; */
         padding: 0 24px;
         justify-content: center;
         align-items: center;
@@ -401,7 +429,7 @@ footer img {
     }
     
     #foot-text {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: center;
     }
     
