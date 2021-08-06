@@ -1,4 +1,3 @@
--Animaciones en las imagenes (Con informacion)
--Animacion de scroll en botones de "menu"
--Animacion hover botones
--Prueba(esto deberia estar solo en el workspace)
+-Fondo del menu
+-Animacion en el fondo del menu
+-Animacion en las barras del menu
