@@ -402,6 +402,10 @@ footer img {
         padding: .5em 0;
     }
     
+    #slider-container {
+      display: none;
+    }
+    
     #buttons {
         margin: 4rem 24px;
     }
