@@ -32,6 +32,8 @@ a {
     color: black;
 }
 
+
+
 input {
     display: none;
 }
@@ -57,18 +59,17 @@ header label {
 }
 
 #menu li{
+    margin: 1px 1px 1px 59px;
     display: block;
-    margin: 1px 1px 1px 60px;
+}
+
+#menu li:hover {
+    margin: 0px 0px 0px 60px;
+    border-radius: 3px;
 }
 
 #menu a {
     padding: 4px;
-}
-
-#menu li:hover {
-    margin: 0px 0px 0px 59px;
-    border: 1px solid;
-    border-radius: 2px;
 }
 
 #menu .whitout-rec:hover{
@@ -152,6 +153,7 @@ header label {
 
 .btn-m:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid;
 }
 
 .btn-animation {
@@ -289,11 +291,15 @@ footer img {
 
 @media (max-width:768px) {
 
+    #menu li {
+        margin: 0px 0px 15px 0px;
+        border-radius: 0px;
+    }
 
     #menu li:hover {
-        margin: 0px 0px 0px 0px;
-        border: 1px solid;
-        border-radius: 2px;
+        border: 0px solid;
+        margin: 0px 0px 15px 0px;
+        border-radius: 0px;
     }
 
     header label {
@@ -308,10 +314,6 @@ footer img {
     #menu ul {
         flex-direction: column;
         /* background-color: white; */
-    }
-
-    #menu li {
-        margin-left: 0;
     }
 
     #menu {
@@ -335,7 +337,6 @@ footer img {
         transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
         
     }
-
 
     #container {
         width: 100%;
