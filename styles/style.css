@@ -59,13 +59,7 @@ header label {
 }
 
 #menu li{
-    margin: 1px 1px 1px 59px;
     display: block;
-}
-
-#menu li:hover {
-    margin: 0px 0px 0px 60px;
-    border-radius: 3px;
 }
 
 #menu a {
@@ -148,12 +142,15 @@ header label {
 
 .btn-m:link,
 .btn-m:visited {
-    transition: all .2s;
+    border-radius: 3px;
+    margin-right: 60px;
 }
 
 .btn-m:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border: 1px solid;
+    margin-right: 58px;
+
 }
 
 .btn-animation {
@@ -291,16 +288,20 @@ footer img {
 
 @media (max-width:768px) {
 
-    #menu li {
+    .btn-m:link,
+    .btn-m:visited {
         margin: 0px 0px 15px 0px;
         border-radius: 0px;
+
     }
 
-    #menu li:hover {
-        border: 0px solid;
+    .btn-m:hover {
+        border: 1px solid;
         margin: 0px 0px 15px 0px;
         border-radius: 0px;
+
     }
+
 
     header label {
         display: block;
