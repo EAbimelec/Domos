@@ -177,7 +177,6 @@ header label {
 }
 
 #location {
-    grid-row: 2 / 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -185,10 +184,9 @@ header label {
 }
 
 #map {
-    width: 51em;
-    height: 30em;
+    width: 70vw;
+    height: 55vh;
     border: none;
-    
 }
 
 #work {
@@ -405,7 +403,7 @@ footer img {
 
     }
 
-    #rigth-arrow {
+    #right-arrow {
 
       left: 85vw;
 
