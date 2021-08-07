@@ -142,15 +142,15 @@ header label {
 
 .btn-m:link,
 .btn-m:visited {
-    border-radius: 3px;
-    margin-right: 60px;
+    margin: 1px 1px 1px 60px;
 }
 
 .btn-m:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border: 1px solid;
-    margin-right: 58px;
-
+    border-radius: 3px;
+    margin: 0px 1px 0px 58px;
+    position:static;
 }
 
 .btn-animation {
@@ -290,15 +290,14 @@ footer img {
 
     .btn-m:link,
     .btn-m:visited {
-        margin: 0px 0px 15px 0px;
-        border-radius: 0px;
-
+        margin: 1px 1px 15px 1px;
+        
     }
 
     .btn-m:hover {
         border: 1px solid;
         margin: 0px 0px 15px 0px;
-        border-radius: 0px;
+        border-radius: 3px;
 
     }
 
