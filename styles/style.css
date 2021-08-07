@@ -453,14 +453,14 @@ footer img {
         position: fixed;
         width: 35%;
         height: 100%;
-        transition: 1s;
+        transition: .3s;
       }
 
   .main-header-mobile2{
     position: fixed;
     background-color: rgba(255, 255, 255, 1);
     width: 50%;
-    transition: 1s;
+    transition: .3s;
     height: 100%;
     
   }
