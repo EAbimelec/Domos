@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', main);
+window.addEventListener('load', main);
+
 
 function main(){
-  
   window.addEventListener('scroll', headerAnimation);
   window.onresize = conditions;
+
 
   var mainHeader = document.getElementById("main-header");
   var checkbox = document.querySelector("input[name=checkbox]");
@@ -17,7 +18,7 @@ function main(){
           mainHeader.classList.remove("white");
         }
   }
-    
+
     checkbox.addEventListener('change', function() {
       if (this.checked) {
         if(window.innerWidth > 768){
@@ -56,4 +57,13 @@ function main(){
       document.querySelector("input[name=checkbox]").checked = false;
     }
   }
+
+  var botones = document.getElementsByClassName('btn--m');
+
+  for( i=0; i<botones.length; i++){
+    botones[i].addEventListener("click", function() {
+    document.querySelector("input[name=checkbox]").checked = false;
+  });
+  }
+
 }
