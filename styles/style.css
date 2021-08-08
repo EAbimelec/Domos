@@ -190,7 +190,7 @@ header label {
 }
 
 #work {
-    margin: 0px 4em;
+    /* margin: 0px 4em; */
     display: flex;
     flex-direction: column;
 }
@@ -219,9 +219,9 @@ header label {
 }
 
 .image-block img {
-    width: 100%;
-    
-    border-radius: 0 0 4px 4px;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+  height: calc( .58 * 58vw);
 } 
 
 .image-block {
@@ -275,6 +275,20 @@ footer {
 footer img {
     height: 70px;
     width: 180px;
+}
+
+@media (max-width:1024px) {
+
+    #location {
+        display: flex;
+        flex-direction: column;
+        margin: 2em 24px 24px;
+    }
+
+    #location .location-component {
+	width: 100%;
+	margin-top: 2em;
+    }
 }
 
 @media (max-width:768px) {
@@ -346,16 +360,8 @@ footer img {
         padding: .7rem 1.9rem;
     }
 
-    #location {
-        display: flex;
-        flex-direction: column;
-        margin: 2em 24px 24px;
-    }
 
-    #location .location-component {
-        width: 100%;
-        margin-top: 2em;
-    }
+    
 
     #work {
         margin: 0 ;
@@ -366,21 +372,27 @@ footer img {
     #work h2 {
         margin: 3.2rem auto 2rem;
     }
-    
-    .image-block h3 {
-        font-size: 1.8em;
-        line-height: 1.7rem;
-        padding: .5em 0;
-	border-radius: 0;
+
+    .slider-container {
+      height: calc(100vw * .74);
     }
-    
 
     .image-block {
-
       width: 100%;
-
+      height: 100%;
     }
 
+    .image-block h3 {
+      font-size: 1.6em;
+      line-height: 1.7rem;
+      padding: .5em 0;
+      border-radius: 0;
+    }
+
+    .image-block img{
+      width: 100%;
+      height: calc(100vw * .74);
+    }
 
     .arrows {
       height: 40px;
@@ -388,25 +400,29 @@ footer img {
       transition: .3s;
       position: absolute;
       margin: 0;
-      top: 1555px;
     }
 
     .arrows:hover {
-      height: 56px;
+      height: 44px;
       width: 40px;
-      top: 1547px;
     }
 
     #left-arrow {
-
       right: 85vw;
+      top: 1446px;
+    }
 
+    #left-arrow:hover {
+      top: 1444px;
     }
 
     #right-arrow {
-
       left: 85vw;
+      top: 1446px;
+    }
 
+    #right-arrow:hover {
+      top: 1444px;
     }
 
     #buttons {
