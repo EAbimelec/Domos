@@ -32,7 +32,17 @@ a {
     color: black;
 }
 
+.transision1{
 
+    opacity: .1;
+    transition: .5s;
+
+}
+
+.transision2{
+    opacity: 1;
+
+}
 
 input {
     display: none;
@@ -64,6 +74,7 @@ header label {
 
 #menu a {
     padding: 4px;
+    
 }
 
 #menu .whitout-rec:hover{
@@ -314,6 +325,10 @@ footer img {
     #menu ul {
         flex-direction: column;
         /* background-color: white; */
+    }
+
+    #menu li {
+        margin-bottom: 15px;
     }
 
     #menu {

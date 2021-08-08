@@ -1,4 +1,9 @@
 window.addEventListener('load', main);
+var transisiones = document.getElementsByClassName('transision1');
+  for( i=0; i<transisiones.length; i++){
+    console.log(transisiones[i].className);
+    transisiones[i].classList.add("transision2");
+  }
 
 
 function main(){
@@ -63,7 +68,13 @@ function main(){
   for( i=0; i<botones.length; i++){
     botones[i].addEventListener("click", function() {
     document.querySelector("input[name=checkbox]").checked = false;
-  });
+    if(window.innerWidth < 768){
+    mainHeader.classList.add("main-header-mobile1");
+    mainHeader.classList.remove("main-header-mobile2");
+    }
+    });
   }
+
+  
 
 }
