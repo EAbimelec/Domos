@@ -32,6 +32,18 @@ a {
     color: black;
 }
 
+.transision1{
+
+    opacity: .1;
+    transition: .5s;
+
+}
+
+.transision2{
+    opacity: 1;
+
+}
+
 input {
     display: none;
 }
@@ -58,17 +70,11 @@ header label {
 
 #menu li{
     display: block;
-    margin: 1px 1px 1px 60px;
 }
 
 #menu a {
     padding: 4px;
-}
-
-#menu li:hover {
-    margin: 0px 0px 0px 59px;
-    border: 1px solid;
-    border-radius: 2px;
+    
 }
 
 #menu .whitout-rec:hover{
@@ -147,11 +153,15 @@ header label {
 
 .btn-m:link,
 .btn-m:visited {
-    transition: all .2s;
+    margin: 1px 1px 1px 60px;
 }
 
 .btn-m:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+    border-radius: 3px;
+    margin: 0px 1px 0px 58px;
+    position:static;
 }
 
 .btn-animation {
@@ -289,12 +299,19 @@ footer img {
 
 @media (max-width:768px) {
 
-
-    #menu li:hover {
-        margin: 0px 0px 0px 0px;
-        border: 1px solid;
-        border-radius: 2px;
+    .btn-m:link,
+    .btn-m:visited {
+        margin: 1px 1px 15px 1px;
+        
     }
+
+    .btn-m:hover {
+        border: 1px solid;
+        margin: 0px 0px 15px 0px;
+        border-radius: 3px;
+
+    }
+
 
     header label {
         display: block;
@@ -311,7 +328,7 @@ footer img {
     }
 
     #menu li {
-        margin-left: 0;
+        margin-bottom: 15px;
     }
 
     #menu {
@@ -335,7 +352,6 @@ footer img {
         transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
         
     }
-
 
     #container {
         width: 100%;
@@ -449,20 +465,26 @@ footer img {
 
     .main-header-mobile1{
         position: fixed;
-        width: 35%;
+        width: 30%;
         height: 100%;
-        transition: 1s;
+        transition: .3s;
       }
 
   .main-header-mobile2{
     position: fixed;
     background-color: rgba(255, 255, 255, 1);
     width: 50%;
-    transition: 1s;
+    transition: .3s;
     height: 100%;
     
   }
 
 html{
     scroll-behavior: smooth;
+}
+
+
+.hidden-letter{
+    color:rgba(0, 0, 0, 0)
+
 }
