@@ -465,7 +465,7 @@ footer img {
 
     .main-header-mobile1{
         position: fixed;
-        width: 35%;
+        width: 30%;
         height: 100%;
         transition: .3s;
       }
@@ -481,4 +481,10 @@ footer img {
 
 html{
     scroll-behavior: smooth;
+}
+
+
+.hidden-letter{
+    color:rgba(0, 0, 0, 0)
+
 }

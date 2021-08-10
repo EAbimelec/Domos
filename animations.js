@@ -28,14 +28,17 @@ function main(){
       if (this.checked) {
         if(window.innerWidth > 768){
           mainHeader.classList.remove("main-header-desktop");
+          setHiddenLetters(false);
         }else{
           mainHeader.classList.remove("main-header-desktop");
+          setHiddenLetters(false);
           mainHeader.classList.remove("main-header-mobile1"); 
           mainHeader.classList.add("main-header-mobile2");     
         }
       }else {
         if(window.innerWidth > 768){
           mainHeader.classList.add("main-header-desktop");
+          setHiddenLetters(false);
           mainHeader.classList.remove("main-header-mobile1"); 
           mainHeader.classList.remove("main-header-mobile2"); 
         
@@ -43,6 +46,7 @@ function main(){
           mainHeader.classList.remove("main-header-desktop");
           mainHeader.classList.remove("main-header-mobile2");
           mainHeader.classList.add("main-header-mobile1");
+          setHiddenLetters(true);
         }
       }
     });
@@ -51,30 +55,49 @@ function main(){
     
     if(window.innerWidth < 768){
       mainHeader.classList.add("main-header-mobile1");
+      setHiddenLetters(true);
       mainHeader.classList.remove("main-header-desktop");
 
     }
     
     if(window.innerWidth > 768){
       mainHeader.classList.remove("main-header-mobile2");
+      setHiddenLetters(false);
       mainHeader.classList.remove("main-header-mobile1");
       mainHeader.classList.add("main-header-desktop");
       document.querySelector("input[name=checkbox]").checked = false;
     }
   }
 
-  var botones = document.getElementsByClassName('btn--m');
+  var buttons = document.getElementsByClassName('btn--m');
 
-  for( i=0; i<botones.length; i++){
-    botones[i].addEventListener("click", function() {
+  for( i=0; i<buttons.length; i++){
+    buttons[i].addEventListener("click", function() {
     document.querySelector("input[name=checkbox]").checked = false;
     if(window.innerWidth < 768){
     mainHeader.classList.add("main-header-mobile1");
+    setHiddenLetters(true);
     mainHeader.classList.remove("main-header-mobile2");
     }
     });
   }
 
+  function setHiddenLetters(opc){
+    if(opc){
+      for( i=0; i<buttons.length; i++){
+        buttons[i].classList.add("hidden-letter");
+      }
+    }else{
+      for( i=0; i<buttons.length; i++){
+        buttons[i].classList.remove("hidden-letter");
+      }
+    }
+  }
+
+
   
 
 }
+
+
+//tru tru false
