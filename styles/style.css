@@ -92,12 +92,10 @@ header label {
     margin: 0 auto;
     max-width: 125rem;
     display: grid;
-    /* grid-template-rows: repeat(5, auto); */
 }
 
 
 #first {
-    /* grid-row: 1 / 1; */
     background-image: url(../images/inicio.png);
     background-size: 100vw 110vh;
     background-repeat: no-repeat;
@@ -360,9 +358,6 @@ footer img {
         padding: .7rem 1.9rem;
     }
 
-
-    
-
     #work {
         margin: 0 ;
         display: flex;
@@ -373,8 +368,8 @@ footer img {
         margin: 3.2rem auto 2rem;
     }
 
-    .slider-container {
-      height: calc(100vw * .74);
+    #slider-container {
+      position: relative;
     }
 
     .image-block {
@@ -399,7 +394,7 @@ footer img {
       width: 40px;
       transition: .3s;
       position: absolute;
-      margin: 0;
+      margin-top: 32px;
     }
 
     .arrows:hover {
@@ -409,7 +404,6 @@ footer img {
 
     #left-arrow {
       right: 85vw;
-      top: 1446px;
     }
 
     #left-arrow:hover {
@@ -418,7 +412,6 @@ footer img {
 
     #right-arrow {
       left: 85vw;
-      top: 1446px;
     }
 
     #right-arrow:hover {
