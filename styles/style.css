@@ -394,7 +394,7 @@ footer img {
       width: 40px;
       transition: .3s;
       position: absolute;
-      margin-top: 32px;
+      margin: 32px 0 0;
     }
 
     .arrows:hover {
@@ -403,19 +403,19 @@ footer img {
     }
 
     #left-arrow {
-      right: 85vw;
+      left: 0;
     }
 
     #left-arrow:hover {
-      top: 1444px;
+      margin-top: 34px;
     }
 
     #right-arrow {
-      left: 85vw;
+      right: 0;
     }
 
     #right-arrow:hover {
-      top: 1444px;
+      margin-top: 34px;
     }
 
     #buttons {
