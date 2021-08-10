@@ -1,3 +1,1 @@
--Fondo del menu
--Animacion en el fondo del menu
--Animacion en las barras del menu
+-que no se puedan arrastrar las flechas

@@ -52,6 +52,10 @@ header label {
     display: none;
 }
 
+#main-header{
+    z-index: 100;
+}
+
 #menu {
     display: flex;
     margin: 24px 64px;
@@ -245,6 +249,14 @@ header label {
   transition: .3s;
   margin: 0 40px;
   position: relative;
+
+  /* Not Drag */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+
 }
 
 .arrows:hover {
@@ -259,6 +271,8 @@ header label {
     align-items: center;
     text-align: center;
 }
+
+
 
 #buttons h2 {
     margin: 10% auto;
@@ -302,6 +316,10 @@ footer img {
 
 @media (max-width:768px) {
 
+    .set-hidden {
+        color: rgba(0, 0, 0, 0);
+    }
+
     .btn-m:link,
     .btn-m:visited {
         margin: 1px 1px 15px 1px;
@@ -342,6 +360,15 @@ footer img {
 
     #btn-menu:checked ~ #menu {
         margin: 20px 0 0 24px;
+    }
+
+    #btn-menu:checked ~ * .set-hidden {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    #btn-menu:checked ~ #main-header{
+        background-color: rgba(219, 219, 219, 0.986);
+
     }
 
     #btn-menu:checked ~ #main-header{
@@ -518,5 +545,4 @@ html{
 
 .hidden-letter{
     color:rgba(0, 0, 0, 0)
-
 }

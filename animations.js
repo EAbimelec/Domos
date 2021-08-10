@@ -83,15 +83,17 @@ function main(){
   }
 
   function setHiddenLetters(opc){
-    if(opc){
-      for( i=0; i<buttons.length; i++){
-        buttons[i].classList.add("hidden-letter");
-      }
-    }else{
-      for( i=0; i<buttons.length; i++){
-        buttons[i].classList.remove("hidden-letter");
-      }
-    }
+    // if(opc){
+    //   for( i=0; i<buttons.length; i++){
+    //     if(buttons[i].classList!="except"){
+    //       buttons[i].classList.add("hidden-letter");
+    //     }
+    //   }
+    // }else{
+    //   for( i=0; i<buttons.length; i++){
+    //     buttons[i].classList.remove("hidden-letter");
+    //   }
+    // }
   }
 
 
