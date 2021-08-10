@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> 
+<html lang="es" class="transision1">
 
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,10 @@
     <script src="animations.js"></script>
 </head>
 
-<body id="body">
+<!-- id="body" class="body1" -->
 
-    <header id="main-header" class="main-header-desktop">
+<body >
+    <header id="main-header"  class="main-header-desktop">
         <input name="checkbox" type="checkbox" id="btn-menu">
         <label for="btn-menu"><img class="img-menu" src="images/menu.svg" alt="Icono de menu"></label>
 
@@ -33,14 +34,12 @@
             </ul>
         </nav>
         
-        
-        
     </header>
 
     <div id="container">
 
-        <div id="first">
-            <h1 class="first-text">Industriasa</h1>
+        <div id="first" >
+            <h1 id="first-text" class="first-text">Industriasa</h1>
             <h2 class="first-text">
                 <p class="screen">Automatizamos cualquier cosa que puedas</p>
                 <p class="screen" style="margin-bottom: 2rem;">imaginar</p>
@@ -66,25 +65,22 @@
 
             <h2 class="subtitle">Nuestro trabajo</h2>
 
-            <div id="image-1" class="image-block">
-                <h3>Domos automáticos</h3>
-                <img src="images/domo-automatico.png" alt="Domo en automatico abatible, automatizado con pistones">
-            </div>
+	    <div id="slider-container">
 
-            <div id="image-2" class="image-block">
-                <h3>Portones automáticos</h3>
-                <img src="images/porton-automatico.png" alt="Porton auntomatizado con pistones"> 
-            </div>
+		<img id="left-arrow" class="arrows" src="images/left-arrow.svg" alt="">
 
-            <div id="image-3" class="image-block">
-                <h3>Elevadores</h3>
-                <img src="images/elevador.png" alt="Elevador personal, cubierto con cristal templado">   
-            </div>
+		<div id="image-1" class="image-block">
+		    <h3>Domos automáticos</h3>
+		    <img src="images/domo-automatico.png" alt="Domo en automatico abatible, automatizado con pistones">
+		</div>
+	      
+		<img id="rigth-arrow" class="arrows" src="images/right-arrow.svg" alt="">
 
-            <div id="image-4" class="image-block">
-                <h3>Automatizaciones especiales</h3>
-                <img src="images/puerta-cristal.png" alt="Puertas automaticas corredizas de cristal templado">
-            </div> 
+	    </div>
+
+		
+
+
         </div>   
         
         <div id="buttons">
@@ -94,7 +90,7 @@
 
                 <p id="mobile-btn" class="mobile">Conoce todos nuestros proyectos</p>
             </h2>
-            <a class="btn-animation" href="galery.html">Galeria</a>
+            <a class="btn-animation btn--m" href="galery.html">Galeria</a>
 
             <!-- <h2>
                 <p>Haz un presupuesto</p>
@@ -115,6 +111,7 @@
         </footer>
 
     </div>
+    
 
     
 </body>
